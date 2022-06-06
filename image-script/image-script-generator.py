@@ -1,13 +1,10 @@
-from datetime import date, timedelta
+from datetime import date
 
-OUT_FILE_NAME = "wgets.txt"
+from utils.data_utils import date_range
+
+OUT_FILE_NAME = "../wgets.txt"
 WGET_PREFIX = "wget -r --random-wait --accept-regex='[0-9_]_512_HMIB\.jpg' " \
                      "--no-parent https://sdo.gsfc.nasa.gov/assets/img/browse/"
-
-
-def daterange(start_date, end_date):
-    for n in range(int((end_date - start_date).days)):
-        yield start_date + timedelta(n)
 
 
 def create_request(single_date):
@@ -20,7 +17,7 @@ def write_to_file(requests, file_name):
 
 
 def main(start_date, end_date):
-    requests = [create_request(d) for d in daterange(start_date, end_date)]
+    requests = [create_request(d) for d in date_range(start_date, end_date)]
     write_to_file(requests, OUT_FILE_NAME)
 
 
