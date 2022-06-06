@@ -22,4 +22,4 @@ def main(start_date, end_date):
 
 
 if __name__ == '__main__':
-    main(date(2010, 7, 1), date(2022, 5, 31))
+    main(date(2010, 7, 1), date(2022, 6, 1))

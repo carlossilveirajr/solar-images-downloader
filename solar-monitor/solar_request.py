@@ -39,7 +39,7 @@ def write_to_json(spots, file_name):
     with open(file_name, "a", encoding='utf-8') as f:
         for s in spots:
             json.dump(s, f)
-            f.write(",\n")
+            f.write("\n")
 
 
 def progress(count, total):
