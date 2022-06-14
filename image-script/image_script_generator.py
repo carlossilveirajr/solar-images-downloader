@@ -2,7 +2,7 @@ from datetime import date
 
 from utils.data_utils import date_range
 
-OUT_FILE_NAME = "../wgets.txt"
+OUT_FILE_NAME = "target/wgets.txt"
 WGET_PREFIX = "wget -r --random-wait --accept-regex='[0-9_]_512_HMIB\.jpg' " \
                      "--no-parent https://sdo.gsfc.nasa.gov/assets/img/browse/"
 
