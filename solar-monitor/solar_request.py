@@ -69,4 +69,4 @@ def main(first_date, last_date, file_name):
 if __name__ == '__main__':
     end_date = date(2022, 6, 1)
     start_date = date(2010, 7, 1)
-    main(start_date, end_date, "../target/sunspots.json")
+    main(start_date, end_date, "target/sunspots.json")
