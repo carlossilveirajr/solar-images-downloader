@@ -4,6 +4,7 @@ This project stores a collection of small scripts used to extract solar images a
 
 It is divided into two subprojects:
 - image-script: Generates a script to download images from sdo dot gsfc dot nasa dot gov.
+
 - solar-monitor: Result is the sunspot information extracted from solarmonitor dot org.
 
 ## image-script
@@ -12,6 +13,7 @@ This module generates a script with several `wget`s that can be used to download
 For simplicity at `main`, we define the dates for the start and end of the images that will download.
 
 ### To run
+
 At the root folder of this project, do:
 
 #### Create target folder
